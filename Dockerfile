@@ -1,5 +1,8 @@
-FROM nginx
+# Use lightweight Nginx image
+FROM nginx:alpine
 
-WORKDIR /app
+# Copy static site files into Nginx default directory
+COPY . /usr/share/nginx/html
 
-COPY index.html .
+# Expose port 80
+EXPOSE 80
