@@ -90,5 +90,5 @@ jobs:
           subject: "Docker Image Scan Report"
           to: ${{ secrets.EMAIL_TO }}
           from: GitHub CI/CD <${{ secrets.EMAIL_USER }}>
-          body: "The Trivy scan report is attached. Job Done by ARUN c g"
+          body: "The Trivy scan report is attached. Job Done by ARUN cg"
           attachments: trivy-report.json
