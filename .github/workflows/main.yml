@@ -44,5 +44,5 @@ jobs:
 
       - name: Print Image URI
         run: |
-          echo "✅ Image pushed:"
+          echo "✅ This Image pushed:"
           echo "${{ steps.login-ecr.outputs.registry }}/${{ env.ECR_REPOSITORY }}:latest"
